@@ -1,0 +1,19 @@
+root = true
+
+[*.cs]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+insert_final_newline = true
+dotnet_sort_system_directives_first = true
+csharp_style_var_for_built_in_types = false:suggestion
+dotnet_diagnostic.IDE0005.severity = warning
+
+# Правила учебного проекта: в ходе инспекции сопоставьте их с исходным кодом.
+dotnet_naming_rule.interfaces_start_with_i.symbols = interfaces
+dotnet_naming_rule.interfaces_start_with_i.style = prefix_i
+dotnet_naming_rule.interfaces_start_with_i.severity = warning
+
+dotnet_naming_symbols.interfaces.applicable_kinds = interface
+dotnet_naming_style.prefix_i.required_prefix = I
+dotnet_naming_style.prefix_i.capitalization = pascal_case

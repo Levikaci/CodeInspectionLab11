@@ -1,0 +1,5 @@
+bin/
+obj/
+orders.csv
+.vs/
+*.user
